@@ -19,7 +19,7 @@ const CreateNote = () => {
   }
 
   const postData = () => {
-    axios.post("http://localhost:3000/api/v1/notes",
+    axios.post("note-app-api-psi.vercel.app/api/v1/notes",
       {
         title:title,
         description:description,

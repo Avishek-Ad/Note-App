@@ -13,7 +13,7 @@ function Login(){
     const navigate = useNavigate()
 
     const postUser = ()=>{
-        axios.post("http://localhost:3000/api/v1/auth/login", 
+        axios.post("note-app-api-psi.vercel.app/api/v1/auth/login", 
             {
                 email:email,
                 password:password

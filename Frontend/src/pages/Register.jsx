@@ -36,7 +36,7 @@ function Register(){
     }
 
     const postUser = ()=>{
-        axios.post("http://localhost:3000/api/v1/auth/register", 
+        axios.post("note-app-api-psi.vercel.app/api/v1/auth/register", 
             {
                 name:userName,
                 email:email,

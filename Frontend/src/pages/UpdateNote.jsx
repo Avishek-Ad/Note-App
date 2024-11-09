@@ -21,7 +21,7 @@ const UpdateNote = () => {
   }
 
   const updateData = () => {
-    axios.patch(`http://localhost:3000/api/v1/notes/${id}`,
+    axios.patch(`note-app-api-psi.vercel.app/api/v1/notes/${id}`,
       {
         title:title,
         description:description,
