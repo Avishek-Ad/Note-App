@@ -12,7 +12,7 @@ function Dashboard(){
     const navigate = useNavigate()
 
     const getNotes = () => {
-        axios.get("note-app-api-psi.vercel.app/api/v1/notes", 
+        axios.get("https://note-app-api-psi.vercel.app/api/v1/notes", 
             {headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }}
@@ -29,7 +29,7 @@ function Dashboard(){
     }
 
     const deleteNote = (id) => {
-        axios.delete(`note-app-api-psi.vercel.app/api/v1/notes/${id}`, 
+        axios.delete(`https://note-app-api-psi.vercel.app/api/v1/notes/${id}`, 
             {headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }}
