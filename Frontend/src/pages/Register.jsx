@@ -36,7 +36,7 @@ function Register(){
     }
 
     const postUser = ()=>{
-        axios.post("https://note-app-api-psi.vercel.app/api/v1/auth/register", 
+        axios.post("https://note-app-khaki-five.vercel.app/api/v1/auth/register", 
             {
                 name:userName,
                 email:email,
